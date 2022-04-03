@@ -1,0 +1,11 @@
+{
+  "name": "node_tut",
+  "version": "1.0.0",
+  "description": "node_pr",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "PTY",
+  "license": "MIT"
+}
