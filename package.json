@@ -7,5 +7,9 @@
     "dev": "node index.js"
   },
   "author": "PTY",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3"
+  }
 }
