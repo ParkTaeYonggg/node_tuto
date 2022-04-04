@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 // 익스프레스 객체 생성
 const pr03 = express();
 // 기본 포트설정
-pr03.set("port", process.env.PORT || 80);
+pr03.set("port", process.env.PORT || 3000);
 
 // 기본 앤코딩 설정
 pr03.use(bodyParser.urlencoded({extended: true}));
@@ -13,9 +13,10 @@ pr03.use(bodyParser.json());
 // 라우터 객체
 const router = express.Router();
 
-pr03.get("/hihiGet", (req, res) => {
-    console.log(req);
-    res.send(req);
+pr03.get("/hiGet",(req, res) => {
+    console.log(req.query.name);
+    console.log(req.query.age);
+    res.send(req.query.name + " : " + req.query.age);
 });
 
 // 라우터 등록도 해야함.
