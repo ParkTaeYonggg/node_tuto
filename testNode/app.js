@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
 app.use(require("./test01"));
+app.use(require("./test02"));
 
 // 404 및 500
 app.use((err, req, res, next) => {
